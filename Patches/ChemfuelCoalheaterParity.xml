@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	 <Operation Class="PatchOperationReplace">
+                <xpath>Defs/RimForge.HeatingElementDef[defName="RF_ChemfuelHeatingElement"]/maxAddedHeat</xpath>
+                <value>
+                  <maxAddedHeat>900</maxAddedHeat>
+                </value>
+   </Operation>
+   	<Operation Class="PatchOperationReplace">
+                <xpath>Defs/RimForge.HeatingElementDef[defName="RF_ChemfuelHeatingElement"]/activeFuelBurnRate</xpath> <!-- Makes the Chemfuel heating element more efficent to incentivise a upgrade from the user !-->
+                <value>
+                  <activeFuelBurnRate>100</activeFuelBurnRate>
+                </value>
+   </Operation>
+   <Operation Class="PatchOperationReplace">
+                <xpath>Defs/RimForge.HeatingElementDef[defName="RF_ChemfuelHeatingElement"]/description</xpath>
+                <value>
+                      <description>A heating element, to provide heat to a forge. 
+This one burns chemfuel to produce heat, an upgrade from burning wood.
+Modded: Due to having the coal heating element mod installed the chemfuel heating element has been buffed to match the coal heater but the fuel consumption is halved compared to the coal heater.</description>
+                </value>
+   </Operation>
+</Patch>
